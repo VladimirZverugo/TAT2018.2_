@@ -1,10 +1,7 @@
 ﻿using System;
 
-
-
 namespace DEV3
 {
-
     public class BaseConverter
     {
         /// <summary>
