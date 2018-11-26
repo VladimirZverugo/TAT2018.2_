@@ -11,7 +11,7 @@ namespace TestForDEV3
         /// Transcoder body->converter tests
         /// </summary>
         [Test]
-        public void TestConverterwrightanswer()
+        public void TestConverterWrightAnswer()
         {
             string[] testArgs = { "167", "15" };
             string expected = "B2";
