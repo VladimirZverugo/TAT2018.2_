@@ -11,7 +11,7 @@ namespace TestForDEV3
         /// Transcoder body->converter tests
         /// </summary>
         [Test]
-        public void Test_Converter_wright_answer()
+        public void TestConverterwrightanswer()
         {
             string[] testArgs = { "167", "15" };
             string expected = "B2";
@@ -22,7 +22,7 @@ namespace TestForDEV3
             Assert.AreEqual(expected, result);
         }
         [Test]
-        public void Test_Converter_ZeroNum_NormalBase()
+        public void TestConverterZeroNumNormalBase()
         {
             string[] testArgs = { "0", "19" };
             string expected = "0";
@@ -33,7 +33,7 @@ namespace TestForDEV3
             Assert.AreEqual(expected, result);
         }
         [Test]
-        public void Test_Converter_NormalNum_NormalBase()
+        public void TestConverterNormalNumNormalBase()
         {
             string[] testArgs = { "-0", "10",  };
             string expected = "0";
@@ -44,7 +44,7 @@ namespace TestForDEV3
             Assert.AreEqual(expected, result);
         }
         [Test]
-        public void Test_Converter_NormalNum_OutOfRangeBase()
+        public void TestConverterNormalNumOutOfRangeBase()
         {
             string[] testArgs = { "10", "24", };
             string expected = "Incorrect input" ;
@@ -58,7 +58,7 @@ namespace TestForDEV3
         /// Transcoder body->CheckInput tests. Returns false if correct.
         /// </summary>
         [Test]
-        public void Test_InputChecker_NormalNum_WrongBase()
+        public void TestInputCheckerNormalNumWrongBase()
         {
             string[] testArgs = { "10", "24", };
             bool expected = false;
@@ -70,7 +70,7 @@ namespace TestForDEV3
             Assert.AreEqual(expected, result);
         }
         [Test]
-        public void Test_InputChecker_WrongNum_NormalBase()
+        public void TestInputCheckerWrongNumNormalBase()
         {
             string[] testArgs = { "1A94", "12", };
             bool expected = false;
@@ -82,7 +82,7 @@ namespace TestForDEV3
             Assert.AreEqual(expected, result);
         }
         [Test]
-        public void Test_InputChecker_NormalNum_NormalBase()
+        public void TestInputCheckerNormalNumNormalBase()
         {
             string[] testArgs = { "1024", "15", };
             bool expected = false;
@@ -94,7 +94,7 @@ namespace TestForDEV3
             Assert.AreEqual(expected, result);
         }
         [Test]
-        public void Test_InputChecker_MinusNormalNum_NormalBase()
+        public void TestInputCheckerMinusNormalNumNormalBase()
         {
             string[] testArgs = { "-1024", "15", };
             bool expected = false;
@@ -109,7 +109,7 @@ namespace TestForDEV3
         /// Transcoder body->Reverse tests. Returns string.
         /// </summary>
         [Test]
-        public void Test_Reverse_wright_answer()
+        public void TestReversewrightanswer()
         {
             string testArgs = "123";
             string expected = "321";
@@ -120,7 +120,7 @@ namespace TestForDEV3
             Assert.AreEqual(expected, result);
         }
         [Test]
-        public void Test_Reverse_incorrect_answer()
+        public void TestReverseincorrectanswer()
         {
             string testArgs = "ABC";
             string expected = "ACB";
@@ -131,7 +131,7 @@ namespace TestForDEV3
             Assert.AreEqual(expected, result);
         }
         [Test]
-        public void Test_Reverse_emptyString()
+        public void TestReverseemptyString()
         {
             string testArgs = "";
             string expected = "" ;
