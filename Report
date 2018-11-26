@@ -6,11 +6,11 @@ Test_Converter_wright_answer - accepted
 Test_Converter_ZeroNum_NormalBase - accepted
 Test_Converter_NormalNum_NormalBase - accepted
 Test_Converter_NormalNum_OutOfRangeBase -accepted
-Test_InputChecker_NormalNum_WrongBase - declined
-Test_InputChecker_WrongNum_NormalBase- declined
+Test_InputChecker_NormalNum_WrongBase - accepted
+Test_InputChecker_WrongNum_NormalBase- accepted
 Test_InputChecker_NormalNum_NormalBase - accepted
 Test_InputChecker_MinusNormalNum_NormalBase - accepted
 Test_Reverse_wright_answer - accepted
-Test_Reverse_incorrect_answer - declined
+Test_Reverse_incorrect_answer - accepted
 Test_Reverse_emptyString - accepted
 
