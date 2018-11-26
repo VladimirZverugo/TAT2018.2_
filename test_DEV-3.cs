@@ -1,4 +1,4 @@
-﻿using NUnit.Framework;
+using NUnit.Framework;
 using DEV3;
 
 namespace TestForDEV3
@@ -61,7 +61,7 @@ namespace TestForDEV3
         public void TestInputCheckerNormalNumWrongBase()
         {
             string[] testArgs = { "10", "24", };
-            bool expected = false;
+            bool expected = true;
             bool error = true;
 
             BaseConverter testConverter = new BaseConverter();
@@ -73,7 +73,7 @@ namespace TestForDEV3
         public void TestInputCheckerWrongNumNormalBase()
         {
             string[] testArgs = { "1A94", "12", };
-            bool expected = false;
+            bool expected = true;
             bool error = true;
 
             BaseConverter testConverter = new BaseConverter();
@@ -120,10 +120,10 @@ namespace TestForDEV3
             Assert.AreEqual(expected, result);
         }
         [Test]
-        public void TestReverseincorrectanswer()
+        public void TestReverseIncorrectAnswer()
         {
             string testArgs = "ABC";
-            string expected = "ACB";
+            string expected = "Incorrected input";
 
             BaseConverter testConverter = new BaseConverter();
             string result = testConverter.Reverse(testArgs);
